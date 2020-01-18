@@ -1,0 +1,57 @@
+.container{
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.viewbox{
+  width: 4000px;
+  height: 100%;
+  transition: 0.8s;
+}
+
+.viewbox img:nth-child(1){
+  width: 1900px;
+  height: 635px;
+}
+
+.viewbox img:nth-child(2){
+  width: 1900px;
+  height: 635px;
+}
+
+.ctrbar{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 90%;
+  left: 48%;
+}
+
+input{
+  display: none;
+}
+.ctrbar label{
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  margin-right: 10px;
+  background:rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.ctrbar label:hover{
+  cursor: pointer;
+}
+
+#r1:checked~ .ctrbar #r11{
+  background:rgb(0, 41, 86);
+}
+
+#r2:checked~ .ctrbar #r22{
+  background:rgb(0, 41, 86);
+}
+
+#r2:checked~.viewbox{
+  margin-left: -1905px;
+}
